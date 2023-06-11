@@ -2,13 +2,11 @@ import React from "react";
 import "./styles.css";
 
 export default function Form() {
-  const [starWarsData, setStarWarsData] = React.useState({});
-
   const [data, setdata] = React.useState({
     email_id: "",
     password: "",
     finalPassword: "",
-    joinnewsletter: false,
+    joinnewsletter: false
   });
 
   function handleclick(event) {
@@ -17,7 +15,7 @@ export default function Form() {
     setdata((prev) => {
       return {
         ...prev,
-        [name]: type === "checkbox" ? checked : value,
+        [name]: type === "checkbox" ? checked : value
       };
     });
   }
@@ -72,10 +70,6 @@ export default function Form() {
         </div>
         <button className="form--submit">sign up</button>
       </form>
-      <div>
-        {/* {/* {/* {/* <pre>{JSON.stringify(starWarsData, null, 2)}</pre> */} */} */}
-        */}
-      </div>
     </div>
   );
 }
