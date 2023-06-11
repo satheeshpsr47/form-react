@@ -73,7 +73,8 @@ export default function Form() {
         <button className="form--submit">sign up</button>
       </form>
       <div>
-        {/* {/* {/* <pre>{JSON.stringify(starWarsData, null, 2)}</pre> */} */} */}
+        {/* {/* {/* {/* <pre>{JSON.stringify(starWarsData, null, 2)}</pre> */} */} */}
+        */}
       </div>
     </div>
   );
